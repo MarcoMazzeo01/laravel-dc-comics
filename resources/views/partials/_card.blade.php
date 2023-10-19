@@ -7,7 +7,7 @@
 
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
             <a href="{{ route('comics.show', $comic) }}" class="btn btn-primary">Visualizza</a>
-            <a href="#" class="btn btn-warning">Modifica</a>
+            <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning">Modifica</a>
             <a href="#" class="btn btn-danger">Cancella</a>
         </div>
     </div>

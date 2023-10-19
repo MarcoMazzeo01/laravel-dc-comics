@@ -1,7 +1,15 @@
 @extends('layouts.app')
 
 @section('main-content')
-    {{ dump($comics) }}
+    <div class="container">
+        <div class="row g-3">
 
-    @include('partials._card')
+            @forelse ($comics as $comic)
+                <div class="col-3">@include('partials._card')</div>
+            @empty
+                <h2>Nessun fumetto disponibile.</h2>
+            @endforelse
+
+        </div>
+    </div>
 @endsection

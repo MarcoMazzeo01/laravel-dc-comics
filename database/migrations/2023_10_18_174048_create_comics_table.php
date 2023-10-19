@@ -21,7 +21,7 @@ return new class extends Migration
             $table->tinyInteger('price')->unsigned();
             $table->char('series', 75);
             $table->date('sale_date');
-            $table->enum('type', ['comicbook', 'graphic novel']);
+            $table->enum('type', ['comic book', 'graphic novel']);
             $table->timestamps();
         });
     }

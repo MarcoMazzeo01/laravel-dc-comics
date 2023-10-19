@@ -42,7 +42,10 @@
             </div>
 
             {{-- data vendita --}}
-
+            <div class="form-group mb-3">
+                <label class="active" for="dateStandard">Data vendita</label>
+                <input type="date" id="dateStandard" name="date">
+            </div>
 
             {{-- tipo --}}
             <select class="form-select mb-3" aria-label="Default select example" name="type">

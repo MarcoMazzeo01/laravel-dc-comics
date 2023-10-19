@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Fumetti')
+
 @section('main-content')
     <div class="container">
         <div class="row g-3">
